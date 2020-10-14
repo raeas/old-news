@@ -1,0 +1,63 @@
+<!DOCTYPE html lang="en">
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Old News</title>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+  	</head>
+
+	<body>
+		<header>
+			<h1>Old News</h1>
+			<!--nav for future build out>
+				<ul id="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav -->
+		</header>
+   
+	    <main>
+			<div class="container">
+				
+				<h2>Discover Historic Newspapers</h2>
+
+				<form id="js-form">
+					<label for="js-search-term">Enter search term:</label>
+					<input type="text" name="search-term" id="js-search-term" class="form-style" required>
+					<label for="js-max-results">Maximum results to return:</label>
+					<input type="number" class="form-style" name="max-results" id="js-max-results" value="10">
+					<input type="submit" id="submit-button" class="form-style" value="Fetch Newspapers!">
+				</form>
+
+				<p id="js-error-message" class="error-message"></p>
+
+				<div id="map-container" class="hidden">
+					<h3>Newspaper Locations:</h3>
+					<div id="map"></div>
+				</div>
+
+				<div class="results-container hidden"></div>
+
+				<div hidden id="spinner"></div>
+
+			</div>
+    
+	    </main>
+
+	    <footer>
+			<h4>&#169; Rae Schneider, 2020</h4>
+		</footer>
+
+		<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4JIY6dhHh54lJthiwY2_QICpEXHSV7uc">
+		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		
+	  </body>
+	  
+</html>

@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+/* --- General --- */ 
+
+body {
+  min-width: 350px;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;   
+ }
+
+header {
+  background-color: gray;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+}
+
+/* for future build out
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}*/
+
+main {
+  padding-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 100px 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #bc4749;;
+}
+
+.item {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  height: 100%;
+}
+
+img {
+  width: 70%;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+#map-container {
+  padding: 0 100px;
+  margin: 20px;
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+
+footer {
+  background-color: gray;
+  color: #fff;
+  margin: 20px 0 0 0;
+  padding: 20px 0 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h4 {
+  margin: 10px;
+}
+
+#js-form{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form-style {
+  padding: .2em .5em;
+  margin: .25em 0;
+  border-radius: 5px;
+  height: 40px;
+}
+
+#submit-button {
+  border:3px solid #bc4749;;
+  background-color: #bc4749;
+  color: #f2e8cf;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 3px;
+  height: 40px;
+}
+
+ .results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0 100px;
+  margin: 20px;
+}
+
+.error-message {
+  color: #5A2021;
+}
+
+.hidden {
+  display: none;
+}
+
+/* loading spinner styles */
+#spinner:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #EAE2B7;
+  border-top: 3px solid #FCBF49;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
