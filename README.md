@@ -23,7 +23,7 @@ The "Old News" app uses the Library of Congress' API and Google Maps JavaScript 
 !["Old News" newspaper location](/screenshots/image-3.PNG "'Old News' newspaper location")
 
 -----
-### Technology
+### Tech Stack
 - HTML
 - CSS
 - JavaScript
