@@ -2,7 +2,7 @@
 
 const searchURL = 'https://www.loc.gov/collections/chronicling-america/';
 const mapURL = 'https://maps.googleapis.com/maps/api/geocode/json';
-const apiKey = 'AIzaSyD4JIY6dhHh54lJthiwY2_QICpEXHSV7uc';
+const apiKey = '';
 let map;
 let locations = [];
 let markers = [];
